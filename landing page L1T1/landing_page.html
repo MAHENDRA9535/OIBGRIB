@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 0.1em;
+        list-style: none;
+
+    }
+
+    body {
+        background-image: linear-gradient(to left, rgb(17, 17, 12), rgb(59, 59, 59));
+    }
+
+    #header {
+        background-color: #42a1f5;
+    }
+
+    #header-ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+
+    #header-ul a {
+        text-decoration: none;
+        color: #f5f242;
+        display: block;
+        padding-top: 40px;
+        text-transform: capitalize;
+    }
+
+    #header-ul a:hover {
+        color: black;
+    }
+
+    #container {
+        position: relative;
+    }
+
+    #container ul {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        font-size: xx-large;
+    }
+
+    .image-3 {
+        display: flex;
+        width: auto;
+        background-color: rgb(221, 225, 0);
+        height: fit-content;
+    }
+
+    .image-3 p {
+        text-transform: capitalize;
+        text-shadow: 2px 2px #6cf542;
+        font-size: 22px;
+    }
+
+    .image-4 {
+        display: flex;
+        width: auto;
+        background-color: rgb(225, 0, 0);
+        height: fit-content;
+    }
+
+    .image-4 p {
+        text-transform: capitalize;
+        text-shadow: 2px 2px #4269f5;
+        font-size: 22px;
+    }
+
+    .image-5 {
+        display: flex;
+        width: auto;
+        background-color: rgb(225, 0, 221);
+        height: fit-content;
+    }
+
+    .image-5 p {
+        text-transform: capitalize;
+        text-shadow: 2px 2px #f56c42;
+        font-size: 22px;
+    }
+
+    .image-6 {
+        display: flex;
+        width: auto;
+        background-color: rgb(0, 225, 135);
+        height: fit-content;
+    }
+
+    .image-6 p {
+        text-transform: capitalize;
+        text-shadow: 2px 2px #f54296;
+        font-size: 22px;
+    }
+
+    #contact {
+        color: #f54296;
+        
+        display: flex;
+        padding-left : 30px; 
+    }
+     #contact fieldset {
+        padding: 20px;
+    }
+    #footer {
+        display: flex;
+        justify-content: center;
+        background-color: #42a1f5;
+        margin-bottom: 0px;
+    }
+</style>
+
+<body>
+    <header id="header">
+        <ul id="header-ul">
+            <li> <img src="images/images1.png" alt=""></li>
+            <li><a href="#container">Home</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="_blank">logout</a></li>
+        </ul>
+    </header>
+    <div id="container">
+        <div><img src="images/opening image.png" alt="opening image" height="600" width="100%"></div>
+        <ul>
+            <li>A Demo Of My Landing Page.</li><br>
+            <li>This Page Gives A Explanation Of Some Images.</li>
+        </ul>
+    </div>
+    <div class="image-3">
+        <span><img src="images/image-3.jpg" alt="benz" width="500px"></span>
+        <p>Formula 1 Mercedes-Benz car is one of the most advanced and highly sought after racing cars in the world of
+            motorsports.
+            These cars are designed and built by Mercedes-AMG High Performance Powertrains, a subsidiary of the
+            Mercedes-Benz
+            company, to compete in the Formula One World Championship. The car features a sleek aerodynamic design and
+            lightweight
+            carbon fiber construction, making it incredibly fast and agile on the track. Powering the vehicle is a
+            hybrid power
+            unit, consisting of a 1.6-liter turbocharged V6 engine and powerful electric motors, capable of delivering
+            over 1,000
+            horsepower. The technology used in the car is cutting-edge and constantly evolving, with advancements being
+            made in
+            areas such as aerodynamics, suspension, and fuel efficiency. The Formula 1 Mercedes-Benz car is a testament
+            to the
+            company's commitment to innovation and excellence, and is a dominant force in the world of motorsports.
+        </p>
+    </div>
+    <div class="image-4">
+        <span><img src="images/image-4.jpg" alt="red-bull" width="500px"></span>
+        <p>The Red Bull Racing Formula 1 car is a high-performance racing machine designed and built to compete in the
+            prestigious
+            Formula One World Championship. The team is based in Milton Keynes, England and has a strong reputation for
+            pushing the
+            boundaries of innovation in motorsports. The car is powered by a powerful hybrid power unit, consisting of a
+            V6
+            turbocharged engine and an advanced energy recovery system, capable of delivering over 900 horsepower. The
+            aerodynamic
+            design of the car is sleek and highly optimized for speed, featuring advanced technologies such as active
+            suspension,
+            flexible winglets, and cutting-edge tire technology. The Red Bull Racing team is known for its fearless and
+            aggressive
+            driving style, and the Formula 1 car is a reflection of this approach, with its lightweight construction and
+            advanced
+            technologies allowing it to be fast and responsive on the track. The Red Bull Racing Formula 1 car is a true
+            work of
+            engineering art and a dominant force in the world of motorsports.</p>
+    </div>
+    <div class="image-6">
+        <span><img src="images/image-6.jpg" alt="cat" width="500px"></span>
+        <p>A cat is a popular household pet known for its playful, curious, and affectionate nature. They have a sleek
+            and agile
+            body, padded paws, and sharp retractable claws, which make them excellent hunters. Cats are also known for
+            their
+            grooming habits and take pride in keeping themselves clean. They are independent animals and are often able
+            to entertain
+            themselves with toys or by simply observing their surroundings. Despite their reputation for being solitary
+            creatures,
+            many cats form strong bonds with their owners and enjoy spending time with them, often seeking attention and
+            affection.
+            With their soft purring and gentle personalities, cats make wonderful companions and are beloved by millions
+            of people
+            around the world. Whether lounging in a sunbeam, playing with a toy mouse, or snuggling up on a warm lap,
+            cats bring joy
+            and comfort to those around them.</p>
+    </div>
+    <div class="image-5">
+        <span><img src="images/image-5.jpg" alt="bridge" width="400px"></span>
+        <p>Bridges in the United States play a vital role in connecting people and commerce, spanning rivers, valleys,
+            and highways
+            to provide essential links between communities. From the iconic Golden Gate Bridge in San Francisco to the
+            towering
+            Verrazano-Narrows Bridge in New York City, the bridges of the United States showcase a diversity of design
+            and
+            engineering innovations. Some of the most impressive bridges in the country utilize cutting-edge materials
+            and
+            construction techniques to overcome the challenges posed by difficult terrain, extreme weather, and heavy
+            traffic.
+            Whether they are suspension bridges, cantilever bridges, or cable-stayed bridges, these structures are
+            marvels of human
+            ingenuity and serve as symbols of the strength and resilience of the American spirit. Whether you're
+            crossing a bridge
+            to get to work, school, or simply to enjoy a scenic view, the bridges of the United States are an integral
+            part of daily
+            life and play a key role in keeping the country moving forward.</p>
+    </div>
+    <form id="contact">
+        <fieldset>
+            <summary>&nbsp;&nbsp;&nbsp; Contact Details:</summary>
+            <ul>
+            <li>name :<input type="text" value="name"></li>
+            <li>email :<input type="email" name="email" value="email"></li>
+            <li>phone number :<input type="number" name="phone" value="phone number"> </li>
+            <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;
+            <button type="reset">Reset</button></li>
+        </ul></fieldset>
+    </form>
+    <footer id="footer">
+        <div>
+            <h3>Please Visit Again &copy;copyrights</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
