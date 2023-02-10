@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mahendra's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+        * {
+            font-family: 'Roboto Slab', serif;
+            box-sizing: border-box;
+            margin: 0px;
+            list-style: none;
+
+        }
+
+        body {
+            background-image: linear-gradient(to right, white, rgb(189, 7, 189));
+        }
+
+        /* creation of partition in the page */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 750px;
+
+        }
+
+        .left {
+            width: 75%;
+
+        }
+
+        .right {
+            width: 25%;
+            background-color: rgb(255, 20, 20);
+        }
+
+        .row:after {
+            display: table;
+            clear: both;
+        }
+
+        /* left side of the partition */
+        .header {
+            display: flex;
+
+        }
+
+        .header span {
+            padding-top: 20px;
+        }
+
+        .header ul {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .header li {
+            padding: 40px;
+
+        }
+
+        .header a:hover {
+            color: #f72d4e;
+            text-decoration: overline;
+        }
+
+        .header a {
+            text-decoration: none;
+            font-size: larger;
+            color: black;
+        }
+
+        .my_image span {
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+
+        }
+
+        .my_image {
+            position: relative;
+        }
+
+        .my_image #myty {
+            position: absolute;
+            top: 45%;
+            bottom: 50%;
+            left: 45%;
+            font-size: xx-large;
+            font-style: italic;
+
+        }
+
+        /* right partition */
+        #paral {
+            display: block;
+            justify-content: center;
+            padding-top: 180px;
+            font-size: xx-large;
+            color: aliceblue;
+        }
+
+        .resume button {
+            color: rgb(130, 110, 107);
+            display: flex;
+            border: 5px solid;
+            position: absolute;
+            left: 80%;
+            top: 70%;
+            padding: 15px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: large;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        .resume a {
+            color: rgb(255, 44, 79);
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .resume a:hover {
+            color: rgb(30, 31, 31);
+            text-decoration: overline;
+        }
+
+        .contact button {
+            color: rgb(50, 18, 231);
+            display: flex;
+            border: 5px solid;
+            position: absolute;
+            top: 30px;
+            left: 85%;
+            padding: 15px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .contact a {
+            color: rgb(255, 44, 79);
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .contact a:hover {
+            color: rgb(30, 31, 31);
+            text-decoration: overline;
+        }
+
+
+        /* education */
+        .education {
+            padding: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            color: #121111;
+        }
+
+        .box1 {
+            padding: 30px;
+            margin-top: 30px;
+            background-color: rgb(249, 75, 75);
+            box-shadow: 5px 5px rgb(5, 5, 5);
+
+        }
+
+        .box2 {
+            padding: 30px;
+            margin-top: 30px;
+            background-color: rgb(254, 73, 73);
+            box-shadow: 5px 5px rgb(5, 5, 5);
+
+        }
+
+        .box3 {
+            padding: 30px;
+            margin-top: 30px;
+            background-color: rgb(255, 59, 59);
+            box-shadow: 5px 5px rgb(5, 5, 5);
+
+        }
+
+        /*skills*/
+        .skills h2 {
+            padding: 15px;
+            color: #121111;
+        }
+
+        .mys {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mys li {
+
+            padding: 15px;
+            margin-top: 30px;
+            background-color: rgb(244, 66, 66);
+            box-shadow: 5px 5px rgb(6, 4, 4);
+        }
+
+        /*technologies*/
+        .myt {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .tech h2 {
+            padding: 15px;
+            color: #121111;
+        }
+
+        .myt li {
+
+            padding: 15px;
+            margin-top: 30px;
+            background-color: rgb(244, 66, 66);
+            box-shadow: 5px 5px rgb(6, 4, 4);
+        }
+
+        /*footer*/
+        #end span {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /*contact details */
+        #contact {
+            padding-left: 20px;
+            padding-right: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column left">
+            <!--left side content -->
+            <!-- header or home -->
+            <header class="header" id="header">
+                <span><img src="images/logo.jpg" alt="logo" width="100px"></span>
+                <ul>
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#education"> Education</a></li>
+                    <li><a href="#skills"> Skills</a></li>
+                    <li><a href="#project"> Projects</a></li>
+                    <li><a href="#certification"> Certifications</a></li>
+                </ul>
+            </header>
+            <!--my image is loaded using this div-->
+            <div class="my_image">
+                <span><img src="images/myphoto.png" alt="my photo" width="900px"></span>
+                <span id="myty">Hello,<br>My Name Is Divi Mahendra Sai, <br> Web Designer</span>
+            </div>
+        </div>
+        <!-- right side of the home page-->
+        <div class="column right">
+            <div class="resume">
+                <button><a href="content/Divi_mahendra sai_Resume_27-08-2022-20-01-02.pdf">Resume</a></button>
+            </div>
+            <span class="contact"> <button><a href="#contact">Contact</a></button></span>
+            <p id="paral">
+                My experience and desire to study can contribute to the field of computer science and get me one step
+                closer to my
+                objectives.
+            </p>
+        </div>
+    </div>
+    <!--Education field-->
+    <div>
+        <div class="education" id="education">
+            <h2>Education :</h2>
+            <div class="box">
+                <div class="box1">
+                    <h3>MVJ College Of Engineering</h3>
+                    <ul>
+                        <li>course :Computer science & <br> Engineering</li>
+                        <li>CGPA : 8.7(4th sem) </li>
+                        <li>COURSE END : 2024</li>
+                    </ul>
+                </div>
+                <div class="box2">
+                    <h3>Miranda PU college</h3>
+                    <ul>
+                        <li>Stream : Science(PCMC)</li>
+                        <li>Percentage : 70%</li>
+                        <li>COURSE END : 2020</li>
+                    </ul>
+                </div>
+                <div class="box3">
+                    <h3>Sri Chaitanya School</h3>
+                    <ul>
+                        <li>Percentage : 70%</li>
+                        <li>COURSE END : 2018</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--skills -->
+        <div class="skills" id="skills">
+            <h2>Skills :</h2>
+            <ul class="mys">
+                <li>PYTHON</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>DBMS</li>
+                <li>Data Structures & Algorithms</li>
+                <li>UI/UX</li>
+            </ul>
+        </div>
+        <!--technologies-->
+        <div class="tech" id="tech">
+            <h2>Technologies :</h2>
+            <ul class="myt">
+                <li>Web Development</li>
+                <li>Machine Learning</li>
+                <li>Artificial Intelligence</li>
+            </ul>
+        </div>
+        <!--projects-->
+        <div class="tech" id="project">
+            <h2>Projects :</h2>
+            <div class="box">
+                <div class="box1">
+                    <h3>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STUDENT <br> ACADEMIC TRACKER</h3>
+                    <ul>
+                        <li>Used Tech :</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>JAVA SCRIPT</li>
+                    </ul>
+                </div>
+                <div class="box2">
+                    <h3> &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        PORTFOLIO</h3>
+                    <ul>
+                        <li>used Tech :</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="box3">
+                    <h3>Multiple Landing Pages</h3>
+                    <ul>
+                        <li>used Tech :</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Basic JAVA SCRIPT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--certtification-->
+        <div class="tech" id="certification">
+            <h2>Certifications :</h2>
+            <ul>
+                <li class="header" style="padding-top: 10px;"><a href="content/basics of python.pdf">Basics Of
+                        Python</a></li>
+                <li class="header" style="padding-top: 10px;"><a href="content/blockchain dev guide.pdf">BlockChain
+                        Development</a></li>
+                <li class="header" style="padding-top: 10px;"><a href="content/data science foundation.pdf">Data Science
+                        Foundation</a></li>
+                <li class="header" style="padding-top: 10px;"><a
+                        href="content/Divi-Mahendra-sai-Participant-Certificate (1).pdf">CPP Training</a></li>
+                <li class="header" style="padding-top: 10px;"><a
+                        href="content/Divi-Mahendra-sai-Participant-Certificate.pdf">C Training</a></li>
+                <li class="header" style="padding-top: 10px;"> <a href="content/html and css.pdf">Basics Of HTML and
+                        CSS</a></li>
+                <li class="header" style="padding-top: 10px;"><a href="content/intro to ai.pdf">Introduction to AI</a>
+                </li>
+                <li class="header" style="padding-top: 10px;"><a
+                        href="content/small business marketing using linkedin.pdf">Small Business Marketing(Using
+                        LinkedIN)</a></li>
+            </ul>
+        </div>
+        <br><br><br><br>
+        <!--contacts-->
+        <form id="contact">
+            <fieldset>
+                <summary>Contact Details:</summary>
+                <ul>
+                    <li>Name : <input type="text" placeholder="Name"></li>
+                    <li>Email-ID : <input type="email" placeholder="E-mail"></li>
+                    <li>Phone-Number : <input type="number" placeholder="phone"></li>
+                    <li><button type="submit">Submit</button> &nbsp;&nbsp; &nbsp; &nbsp;<button
+                            type="reset">Reset</button></li>
+                </ul>
+            </fieldset>
+        </form><br><br>
+        <!--footer-->
+        <footer id="end">
+            <hr>
+            <span> Please Leave Your Details &copy;Copyright </span>
+        </footer>
+</body>
+
+</html>
